@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY PEOPLE &lt;3 </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta name="description" content="MY PEOPLE ARE AWESOME" />
+  <meta name="author" content="css-tricks.ir" />
+  <link rel="stylesheet" type="text/css" href="css/prefixed-style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+  <canvas id="sky"></canvas>
+  <div class="main-wrapper">
+    <div class="moon"></div>
+
+    <div class="music-player-container not-playing">
+  		<div class="music-player">
+  			<div class="player-content-container">
+          <h1 class="title">
+            <span>It's not anyone's right to still be</span>
+            <span>poor</span>
+            <span>with all the</span>
+            <span>fortune</span>
+          </h1>
+  				<div class="music-player-controls">
+  					<div class="control-pause"></div>
+  					<div class="control-play"></div>
+  				</div>
+  			</div>
+        <progress class="seekbar" value="0" max="1"></progress>
+  		</div>
+
+  		<div class="album">
+  			<div class="disk"></div>
+  		</div>
+  	</div>
+
+  </div>
+
+  <audio id="song">
+   <source src="people.mp3" type='audio/mpeg; codecs="mp3"'>
+  </audio>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
