@@ -241,15 +241,19 @@ body {
   animation: spin 2s linear infinite;
   will-change: transform;
 
-	.not-playing & {
+	.is-playing & {
 		top: 52%;
 	}
+
+  .pause & {
+    animation-play-state: paused;
+  }
 
   @media (min-width: 480px) {
     left: 0;
     top: 0;
     bottom: 0;
-    .not-playing & {
+    .is-playing & {
       top: 0;
   		left: 52%;
   	}

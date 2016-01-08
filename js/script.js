@@ -132,17 +132,18 @@
 
       playButton.addEventListener('click', function(e) {
         song.play();
-      	player.classList.remove('not-playing');
+      	player.classList.add('is-playing');
+        player.classList.remove('pause');
       }, false);
 
       pauseButton.addEventListener('click', function(e) {
         song.pause();
-      	player.classList.add('not-playing');
+      	player.classList.add('pause');
       }, false);
 
       song.addEventListener('ended', function(e) {
         this.pause();
-        player.classList.add('not-playing');
+        player.classList.remove('is-playing');
       }, false);
 
       // Handle the seekbar

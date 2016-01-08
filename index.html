@@ -6,16 +6,21 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <meta name="description" content="MY PEOPLE ARE AWESOME" />
   <meta name="author" content="css-tricks.ir" />
-  <link rel="stylesheet" type="text/css" href="css/prefixed-style.css" />
+  <link rel="stylesheet" type="text/css" href="css/prefixed-style.css?v=1" />
 </head>
 
 <body>
   <div class="bg"></div>
+
+  <audio id="song">
+   <source src="people.mp3" type='audio/mpeg; codecs="mp3"'>
+  </audio>
+
   <canvas id="sky"></canvas>
   <div class="main-wrapper">
     <div class="moon"></div>
 
-    <div class="music-player-container not-playing">
+    <div class="music-player-container">
   		<div class="music-player">
   			<div class="player-content-container">
           <h1 class="title">
@@ -39,10 +44,6 @@
 
   </div>
 
-  <audio id="song">
-   <source src="people.mp3" type='audio/mpeg; codecs="mp3"'>
-  </audio>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js?v=1"></script>
 </body>
 </html>
