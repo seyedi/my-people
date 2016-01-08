@@ -200,14 +200,17 @@ body {
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
   will-change: transform; }
-  .not-playing .disk {
+  .is-playing .disk {
     top: 52%; }
+  .pause .disk {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
   @media (min-width: 480px) {
     .disk {
       left: 0;
       top: 0;
       bottom: 0; }
-      .not-playing .disk {
+      .is-playing .disk {
         top: 0;
         left: 52%; } }
 
